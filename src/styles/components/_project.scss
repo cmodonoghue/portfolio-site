@@ -116,35 +116,46 @@
 
     &-info {
 
-      width: 100vw;
-      padding-left: 3rem;
-      padding-right: 3rem;
+      max-width: 100vw;
+      padding-left: 0;
+      padding-right: 0;
       overflow-wrap: break-word;
 
       &__name {
-        width: 80%;
+        width: 70%;
         margin-bottom: 4rem;
+        margin-left: 3rem;
       }
   
       &__stack {
-        width: 80%;
+        width: 70%;
         margin-bottom: 4rem;
+        margin-left: 3rem;
+
       }
   
       &__description {
-        width: 80%;
+        width: 75%;
         margin-bottom: 4rem;
+        margin-left: 3rem;
       }
   
       &__live {
-        width: 85%;
+        width: 75%;
+        margin-left: 3rem;
       }
   
       &__source {
-        width: 80%;
+        width: 70%;
         margin-bottom: 6rem;
+        margin-left: 3rem;
       }
   
+    }
+    &--flipped {
+      & .project-info {
+        margin-right: 0;
+      }
     }
   }
 }
