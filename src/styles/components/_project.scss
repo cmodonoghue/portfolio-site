@@ -1,0 +1,150 @@
+.project {
+  padding: 0 4rem;
+  display: flex;
+  margin-bottom: 12rem;
+
+  &--yellow &-image {
+    background-color: $color-yellow;
+  }
+  &--teal &-image {
+    background-color: $color-teal;
+  }
+  &--lavender &-image {
+    background-color: $color-lavender;
+  }
+
+  &-image {
+    display: flex;
+    width: 45rem;
+    height: 30rem;
+    flex-shrink: 0;
+    margin-right: 8rem;
+    justify-content: center;
+    align-items: center;
+
+    &__thumbnail {
+      background-color: #fff;
+      width: 30rem;
+      // height: 16rem;
+      height: auto;
+      background-size: cover;
+    }
+
+  }
+
+  &-info {
+
+    &__name {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &__stack {
+      margin-bottom: 2rem;
+    }
+
+    &__description {
+      margin-bottom: 2rem;
+    }
+
+    &__live {
+
+      &>a {
+        color: $color-blue;
+
+        &:hover {
+          color: $color-blue-dark;
+        }
+      }
+
+    }
+
+    &__source {
+
+      &>a {
+        color: $color-blue;
+
+        &:hover {
+          color: $color-blue-dark;
+        }
+      }
+
+    }
+
+  }
+
+  &--flipped {
+    flex-direction: row-reverse;
+
+    & .project-info {
+      margin-right: 8rem;
+    }
+
+    & .project-image {
+      margin-right: 0;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .project {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    &-image {
+      width: 100vw;
+      margin-right: 0;
+
+      &__thumbnail {
+        width: 80%;
+      }
+    }
+
+    &--yellow &-info {
+      background-color: $color-yellow;
+    }
+    &--teal &-info {
+      background-color: $color-teal;
+    }
+    &--lavender &-info {
+      background-color: $color-lavender;
+    }
+
+    &-info {
+
+      width: 100vw;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      overflow-wrap: break-word;
+
+      &__name {
+        width: 80%;
+        margin-bottom: 4rem;
+      }
+  
+      &__stack {
+        width: 80%;
+        margin-bottom: 4rem;
+      }
+  
+      &__description {
+        width: 80%;
+        margin-bottom: 4rem;
+      }
+  
+      &__live {
+        width: 85%;
+      }
+  
+      &__source {
+        width: 80%;
+        margin-bottom: 6rem;
+      }
+  
+    }
+  }
+}

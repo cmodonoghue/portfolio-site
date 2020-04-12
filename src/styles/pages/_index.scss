@@ -1,0 +1,172 @@
+.section-projects {
+  padding: 14rem 12rem;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .section-projects {
+    padding: 0;
+    width: 100vw;
+  }
+}
+
+.section-header {
+  border-left: 4px solid $color-gray-light;
+  padding-left: 2rem;
+  margin-bottom: 14rem;
+
+  &__title {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .section-header {
+    margin: 6rem;
+  
+    &__title {
+    }
+  
+    &__subtitle {
+    }
+  
+  }
+}
+
+.section-skills {
+  padding: 6rem 12rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section-skills {
+    padding: 0;
+    width: 100vw;
+  }
+}
+
+.skill-category {
+  color: $color-gray;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin-bottom: 7rem;
+
+  &--back-end,
+  &--other {
+    margin-top: 16rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill-category {
+    &--back-end,
+    &--other {
+      margin-top: 4rem;
+    }
+  }
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skills-item {
+
+  height: 10rem;
+  margin: 0 3rem 0 3rem;
+
+  &__logo {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__name {
+    text-align: center;
+    color: $color-black;
+    font-weight: 400;
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills-item {
+
+    &__logo {
+      width: 6rem;
+      height: 6rem;
+      margin-bottom: 2rem;
+    }
+
+    &__name {
+      display: none;
+    }
+  }
+}
+
+.section-contact {
+  padding: 6rem 12rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section-contact {
+    padding: 0;
+    width: 100vw;
+  }
+}
+
+.contact-link {
+  margin-bottom: 3rem;
+  &__icon {
+    display: inline;
+    vertical-align:top;
+    margin-right: 4rem;
+  }
+
+  &__text {
+    display: inline;
+    vertical-align:top;
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-link {
+    margin-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    &__icon {
+      display: inline;
+      height: 3rem;
+      vertical-align:top;
+      margin-right: 4rem;
+    }
+  
+    &__text {
+      display: inline;
+      vertical-align:top;
+      font-size: 1.8rem;
+    }
+  }
+}

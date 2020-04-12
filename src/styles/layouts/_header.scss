@@ -1,0 +1,89 @@
+.header {
+  background-color: $color-blue-light;
+  // /* Background pattern from Toptal Subtle Patterns */
+  // background-image: url('/stripes-light.png');
+  height: 40rem;
+  padding: 4rem 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 36rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    font-weight: 400;
+    font-size: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+
+    &__name {
+      text-align: center;
+    }
+
+  }
+}
+
+.navbar__list {
+  display: flex;
+
+  &-item {
+    font-size: 2.4rem;
+    text-align: right;
+    margin-left: 3rem;
+
+    & > a:hover {
+      color: $color-blue;
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .navbar__list {
+    display: none;
+  }
+}
+
+.header-intro {
+  margin: 16rem auto; 
+  padding: 1rem 0;
+  width: 45rem;
+  border-bottom: 2px solid $color-gray-light;
+
+  &__name {
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+
+    & > span {
+      color: $color-blue;
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .header-intro {
+    margin: 10rem auto; 
+    padding: 1rem 0;
+    width: 70%;
+    border: none;
+  
+    &__name {
+      font-weight: 400;
+      font-size: 3rem;
+    }
+  
+  }
+}
