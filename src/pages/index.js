@@ -15,8 +15,19 @@ const IndexPage = () => (
       </div>
 
       <Project
+        name="Note Party"
+        stack="React, Sass, HTML, CSS, JavaScript"
+        description="Interactive guitar tool I made to help visualize notes on the fretboard and aid in music composition. It allows you to toggle through specific keys and chords, displaying only the notes contained within them. Utilizes React Hooks and Context API."
+        image={"note-party.png"}
+        live="https://note-party.netlify.app/"
+        source="https://github.com/cmodonoghue/note-party"
+        flipped="yes"
+        color="teal"
+      />
+
+      <Project
         name="Greenit"
-        stack="React, Sass"
+        stack="React, Sass, HTML, CSS, JavaScript"
         description="Simple app that uses Reddit's API to retrieve daily top posts from pages related to green things."
         image={"greenit.png"}
         live="https://greenit.netlify.com/"
