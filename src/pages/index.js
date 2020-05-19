@@ -36,7 +36,8 @@ const IndexPage = () => (
         color="lavender"
       />
 
-      <Project
+      {/* removed until it's fixed */}
+      {/* <Project
         name="Verdict"
         stack="HTML, CSS, ASP.NET Core, SQL Server, Microsoft Azure"
         description="School project for Enterprise Application Development (MIS 421),
@@ -47,7 +48,7 @@ const IndexPage = () => (
         source="https://github.com/cmodonoghue/verdict"
         flipped="yes"
         color="yellow"
-      />
+      /> */}
 
       <Project
         name="Important Blog"
