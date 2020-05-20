@@ -22,7 +22,7 @@ const IndexPage = () => (
         live="https://note-party.netlify.app/"
         source="https://github.com/cmodonoghue/note-party"
         flipped="yes"
-        color="teal"
+        color="yellow"
       />
 
       <Project
@@ -58,7 +58,7 @@ const IndexPage = () => (
         image={"blog.png"}
         live="https://important-blog.netlify.com/"
         source="https://github.com/cmodonoghue/important-blog"
-        flipped="no"
+        flipped="yes"
         color="teal"
       />
     </div>
